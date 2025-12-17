@@ -1,0 +1,74 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* -------------------
+   Navigation Bar
+--------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #452c63;
+    padding: 40px 20px;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: rosybrown;
+}
+
+/* -------------------
+   Content
+--------------------- */
+.content {
+    padding: 200px 20px;
+}
+
+/* -------------------
+   Footer
+--------------------- */
+.footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social{
+    color:aliceblue;
+    text-decoration: none;
+}
+
+/* -------------------
+   Media Queries
+   (for small screens)
+--------------------- */
+@media (max-width: 600px) {
+
+    /* Stack nav links vertically */
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    /* Footer sections stack */
+    .footer {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
